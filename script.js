@@ -22,7 +22,7 @@ async function checkWeather(city) {
     document.querySelector(".wind").innerHTML = data.wind.speed + " km/hr";
 
     if (data.weather[0].main == "Clouds"){
-        weatherIcon.src = "images/clouds.png";
+        weatherIcon.src = "clouds.png";
     }
 
     else if(data.weather[0].main == "Clear"){
@@ -48,3 +48,4 @@ searchBtn.addEventListener("click", () =>{
     checkWeather(searchBox.value);
 
 })
+
